@@ -11,7 +11,7 @@ A modern Japanese studio from complete beginner (**JLPT N5 / CEFR A1**) to advan
 - **Reading room** — graded passages with furigana and click-to-gloss
 - **Listening lab** — Japanese TTS quizzes and shadowing
 - **JLPT checkpoints** — mixed quizzes per level
-- **暈先生** — local library tutor, plus **Grok 4.6** via SpaceXAI when `XAI_API_KEY` is set
+- **暁先生** — local library tutor, plus **Grok 4.6** via SpaceXAI when `XAI_API_KEY` is set
 
 Progress is stored in the browser (`localStorage`). No account required.
 
@@ -42,9 +42,14 @@ Without a key, Sensei still looks up kanji, vocab, and grammar from the built-in
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/gavrielka/asahi)
 
-Import [github.com/gavrielka/asahi](https://github.com/gavrielka/asahi) at [vercel.com/new](https://vercel.com/new/clone?repository-url=https://github.com/gavrielka/asahi). Framework preset: **Vite**. Then add `XAI_API_KEY` under Project → Settings → Environment Variables if you want Grok-powered Sensei.
+1. Open [vercel.com/new/clone?repository-url=https://github.com/gavrielka/asahi](https://vercel.com/new/clone?repository-url=https://github.com/gavrielka/asahi)
+2. Import the `gavrielka/asahi` GitHub repo (Vite preset)
+3. Optionally add `XAI_API_KEY` under Project → Settings → Environment Variables
+
+Or from this folder:
 
 ```bash
+npx vercel login
 npx vercel --prod
 ```
 
